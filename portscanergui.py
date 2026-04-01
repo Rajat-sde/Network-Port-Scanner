@@ -245,6 +245,7 @@ class ScannerGUI(tk.Tk):
             initialfile=default_name,
             filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
         )
+        
         if not file_path:
             return
 
