@@ -19,6 +19,7 @@ A lightweight TCP port scanner with a graphical user interface built with Python
 
 No third-party packages are required.
 
+--------------------------------------------
 ## Installation
 
 ```bash
@@ -60,6 +61,7 @@ The following ports are automatically labelled:
 
 Ports not in the list are reported as `Unknown`.
 
+--------------------------------------------
 ## Project Structure
 
 ```
@@ -71,6 +73,47 @@ nmap_portscan_gui/
 ## Disclaimer
 
 Use this tool only on hosts and networks you own or have explicit permission to scan. Unauthorized port scanning may be illegal in your jurisdiction.
+
+----------------------------------------------------------------------------------------
+
+# 🚀## Getting Started
+Follow these instructions to get a local copy of the port scanner up and running.
+
+Prerequisites
+Language: Python 3.8+ (or your specific language)
+
+Permissions: This tool requires administrative/root privileges to perform certain types of scans (e.g., ICMP or SYN scans).
+
+Installation
+Clone the repository
+
+Bash
+git clone https://github.com/yourusername/network-port-scanner.git
+cd network-port-scanner
+Set up a virtual environment (Optional but Recommended)
+
+Bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+Install dependencies
+
+Bash
+pip install -r requirements.txt
+Usage
+To run a basic scan on a target IP or hostname:
+
+Bash
+# Basic scan (may require sudo on Linux/macOS)
+sudo python main.py --target 192.168.1.1
+Common Arguments:
+
+-p, --ports: Specify a range (e.g., 1-1024).
+
+-t, --type: Choose scan type (TCP, SYN, UDP).
+
+-v, --verbose: Enable detailed output.
+
+----------------------------------------------------------------------------------------
 
 ## License
 
